@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.menu{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/perfil.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+span{
+    color: brown;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color: brown;
+    transition: .4s;
+}
+
+.btn{
+    background-color: rgb(2, 103, 255);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    
+}
+
+.conteudo{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3{
+    color: rgb(255 247 191);
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+h4{
+    color: rgba(255 247 191);;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
+
+.sobre{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.contato{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #271924;
+}
+
+.sobre img{
+    height: auto;
+    width: 430px;
+}
+
+.sobre-texto,.contato-texto{
+    width: 550px;
+}
+
+.contato-texto {
+    text-align: center;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre-texto h2, .contato-texto h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.sobre-texto h5,.contato-texto h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.sobre-texto p,.contato-texto p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+
+}
+
+/* primeiro commit*/
+
+
+@media(max-width: 1024px) {
+.sobre img {
+    height: auto;
+    width: 340px;
+}
+}
+
+@media(max-width: 800px) {
+    .logo{
+        font-size: 25px;
+    }
+
+    nav ul li {
+        padding: 9px 15px;
+    }
+
+    .btn{
+        padding: 5px 10px;
+    }
+
+    .conteudo{
+        top: 60%;
+    }
+
+    h4,h3{
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .menu {
+        background-position: 70% 0;
+    }
+
+    .logo{
+        font-size: 25px;
+    }
+
+    nav ul li {
+        padding: 9px 15px;
+    }
+
+    .btn{
+        padding: 5px 10px;
+    }
+
+    .conteudo{
+        top: 60%;
+    }
+
+    h4,h3{
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .sobre img {
+        height: auto;
+        width: 240px;
+        padding: 0px 20px;
+    }
+
+    .sobre-texto h2, .contato-texto h2 {
+        color: white;
+        font-size: 30px;
+
+  } 
+    .sobre-texto p{
+        font-size: 10px;
+    }
+
+}
+
+
+  @media(max-width: 600px) {
+
+    .menu {
+        background-position: 70% 0;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .logo{
+        margin: 15px;
+    }
+
+    ul {
+        margin: 15px;
+    }
+
+    .conteudo {
+        position: relative;
+        top: 40%;
+        left: 0%;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 350px) {
+    ul{
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+}
